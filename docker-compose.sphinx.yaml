@@ -10,4 +10,5 @@ services:
       com.ddev.approot: $DDEV_APPROOT
     volumes:
     - "./docs:/docs"
-    command: ["make", "clean html"]
+    - ".:/mnt/ddev_config"
+    command: tail -f /dev/null
