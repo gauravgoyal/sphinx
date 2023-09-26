@@ -10,4 +10,4 @@ services:
       com.ddev.approot: $DDEV_APPROOT
     volumes:
     - "./docs:/docs"
-    command: ["make", "sphinx-quickstart"]
+    command: ["sphinx-quickstart"]
