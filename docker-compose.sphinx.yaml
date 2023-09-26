@@ -10,4 +10,4 @@ services:
       com.ddev.approot: $DDEV_APPROOT
     volumes:
     - "./docs:/docs"
-    command: ["make", "clean html"]
+    command: ["make", "sphinx-quickstart"]
