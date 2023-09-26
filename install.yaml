@@ -59,4 +59,4 @@ pre_install_actions:
 # DDEV environment variables can be interpolated into these filenames
 project_files:
 - docker-compose.sphinx.yaml
-- commands/sphinx/build-docs
+- commands/sphinx/quickstart
