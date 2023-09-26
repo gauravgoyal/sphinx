@@ -1,0 +1,13 @@
+#ddev-generated
+# Simple template to demonstrate sphinx
+services:
+  sphinx:
+    container_name: ddev-${DDEV_SITENAME}-sphinx
+    image: sphinxdoc/sphinx
+    # These labels ensure this service is discoverable by ddev.
+    labels:
+      com.ddev.site-name: ${DDEV_SITENAME}
+      com.ddev.approot: $DDEV_APPROOT
+    volumes:
+    - "./docs:/docs"
+    command: ["make", "clean html"]
